@@ -1,0 +1,103 @@
+/* Import Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the container with semi-transparent background */
+.instructions-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Styling for headers */
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #222;
+    font-weight: 600;
+}
+
+/* Styling for dropdown summaries */
+details summary {
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #007bff;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Hover effect for summaries */
+details summary:hover {
+    color: #0056b3;
+}
+
+/* Paragraphs inside the dropdown */
+details p, details pre, details ul, details ol {
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Styled pre code blocks */
+details pre {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom indicators for open/close */
+details[open] summary::after {
+    content: " ▲";
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+details:not([open]) summary::after {
+    content: " ▼";
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .instructions-container {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    details summary {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Tracking Instructions</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="instructions-container">
+        <h1>Blockchain Tracking Instructions</h1>
+
+        <!-- Dropdown: Blockchain Tracking Overview -->
+        <details>
+            <summary>1. Blockchain Tracking Overview</summary>
+            <p>This project is a blockchain-based system designed to track chemicals from production to delivery, providing transparency and security.</p>
+        </details>
+
+        <!-- Dropdown: Technologies Used -->
+        <details>
+            <summary>2. Technologies Used</summary>
+            <p>The following technologies are used:</p>
+            <ul>
+                <li><strong>Solidity:</strong> Ethereum Blockchain Smart Contracts</li>
+                <li><strong>React.js:</strong> Frontend User Interface</li>
+            </ul>
+        </details>
+
+        <!-- Dropdown: Getting Started -->
+        <details>
+            <summary>3. Getting Started</summary>
+            <p>Follow these steps to install, configure, and run the project.</p>
+            <p>Clone This Repository <a>www.github.com/TechyDarsh/BlockChain.git</a></p>
+        </details>
+
+        <!-- Dropdown: Prerequisites -->
+        <details>
+            <summary>4. Prerequisites</summary>
+            <p>Ensure you have the following software installed on your machine:</p>
+            <ul>
+                <li><strong>Ganache:</strong> Local blockchain for Ethereum development.</li>
+                <li><strong>MetaMask:</strong> Chrome extension for managing Ethereum accounts.</li>
+                <li><strong>Node.js:</strong> Required to run the React frontend.</li>
+            </ul>
+        </details>
+
+        <!-- Dropdown: Installation and Setup -->
+        <details>
+            <summary>5. Installation and Setup</summary>
+            <p>Steps to install and set up the project:</p>
+            <ol>
+                <li>Download and install Ganache.</li>
+                <li>Start Ganache to set up your local Ethereum blockchain environment.</li>
+                <li>Add MetaMask extension to your browser.</li>
+                <li>Connect MetaMask to Ganache by adding a custom RPC network.</li>
+                <li>Import an account from Ganache into MetaMask using the private key from Ganache.</li>
+            </ol>
+        </details>
+
+        <!-- Dropdown: Deploying the Smart Contract -->
+        <details>
+            <summary>6. Deploying the Smart Contract</summary>
+            <p>To compile and migrate the smart contract:</p>
+            <ol>
+                <li>Open the project folder in your IDE.</li>
+                <li>Copy the Ethereum address from Ganache into the App.js file.</li>
+                <li>In your terminal, navigate to the project root and run the following commands:</li>
+                <pre><code>truffle compile<br>truffle migrate</code></pre>
+                <li>Copy the ABI and contract address from the generated YourContract.json file.</li>
+                <li>Update Contract.js with the ABI and contract address.</li>
+            </ol>
+        </details>
+
+        <!-- Dropdown: Running the Frontend -->
+        <details>
+            <summary>7. Running the Frontend</summary>
+            <p>To start the React application:</p>
+            <pre><code>npm start</code></pre>
+            <p>This will open the application in your default browser at <strong>http://localhost:3000/</strong>.</p>
+        </details>
+
+        <!-- Dropdown: Using the Application -->
+        <details>
+            <summary>8. Using the Application</summary>
+            <p>Steps to use the application:</p>
+            <ol>
+                <li>Login with the following credentials:</li>
+                <pre><code>Username: admin<br>Password: admin</code></pre>
+                <li>Create a batch of chemicals by filling in the details and clicking 'Create Batch'.</li>
+                <li>Verify the blockchain transaction by checking the new block in Ganache.</li>
+            </ol>
+        </details>
+
+        <!-- Dropdown: Role-Based Access Control -->
+        <details>
+            <summary>9. Role-Based Access Control</summary>
+            <p>The application supports multiple user roles:</p>
+            <ul>
+                <li><strong>Admin:</strong> Manages the system and oversees operations.</li>
+                <li><strong>Manufacturers:</strong> Can create chemical batches.</li>
+                <li><strong>Buyers:</strong> Can view and track the chemicals.</li>
+                <li><strong>Customers:</strong> Can view the chemical batches but with limited permissions.</li>
+            </ul>
+        </details>
+
+        <!-- Dropdown: Troubleshooting -->
+        <details>
+            <summary>10. Troubleshooting</summary>
+            <p>If you encounter any issues, ensure that:</p>
+            <ul>
+                <li>Ganache is running and connected to MetaMask.</li>
+                <li>The correct network is selected in MetaMask.</li>
+                <li>The ABI and contract addresses are properly updated in Contract.js.</li>
+            </ul>
+        </details>
+
+        <!-- Dropdown: License -->
+        <details>
+            <summary>11. License</summary>
+            <p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+        </details>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
